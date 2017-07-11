@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_41b02804071e488cb644b133b80da8b2 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_41b02804071e488cb644b133b80da8b2" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_41b02804071e488cb644b133b80da8b2 = L.map(
+                                  'map_41b02804071e488cb644b133b80da8b2',
+                                  {center: [50,5],
+                                  zoom: 5,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_311350ae628a4951becb8432cc9cc3e8 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_41b02804071e488cb644b133b80da8b2);
+
+        
+    
+            var marker_cluster_da194e7e50a74d7d8c83e5fc4f272f79 = L.markerClusterGroup();
+            map_41b02804071e488cb644b133b80da8b2.addLayer(marker_cluster_da194e7e50a74d7d8c83e5fc4f272f79);
+            
+    
+
+            
+
+                var geo_json_b6037d9012754c768b528a2403abe560 = L.geoJson(
+                    {"features": [{"geometry": {"coordinates": [-86.5313851, 36.25797696], "type": "Point"}, "properties": {"created_at": "Sat Apr 08 16:50:07 +0000 2017", "highlight": {}, "style": {}, "text": "@PressSec @WhiteHouse and trump will finally release his TAX RETURNS, right?"}, "type": "Feature"}, {"geometry": {"coordinates": [-77.03733586, 38.90181532], "type": "Point"}, "properties": {"created_at": "Sat Apr 08 16:50:37 +0000 2017", "highlight": {}, "style": {}, "text": "When protesters take to the streets in next week's Tax March, they will have their own symbol. The Chicken Trump. https://t.co/UQ74MFyQfU"}, "type": "Feature"}, {"geometry": {"coordinates": [-96.77401775, 32.79755357], "type": "Point"}, "properties": {"created_at": "Sat Apr 08 16:50:37 +0000 2017", "highlight": {}, "style": {}, "text": "Dallas trends now: Syria, Trump, Irvin, Rangers, Glenn Beck. https://t.co/ztnmfZj0JG"}, "type": "Feature"}, {"geometry": {"coordinates": [-87.90968018, 43.04137104], "type": "Point"}, "properties": {"created_at": "Sat Apr 08 16:50:46 +0000 2017", "highlight": {}, "style": {}, "text": "Milwaukee trends now: Syria, Trump, Milwaukee, Russia, Brewers. https://t.co/2PWRnlp3ai"}, "type": "Feature"}, {"geometry": {"coordinates": [-88.58761058, 41.96928793], "type": "Point"}, "properties": {"created_at": "Sat Apr 08 16:50:58 +0000 2017", "highlight": {}, "style": {}, "text": "Track wall construction continues!  We got our wall up, how about you #trump\ud83c\uddfa\ud83c\uddf8 #2017raceseason\u2026 https://t.co/UKTmcfRkZ8"}, "type": "Feature"}, {"geometry": {"coordinates": [-71.657239, 10.658435], "type": "Point"}, "properties": {"created_at": "Sat Apr 08 16:53:26 +0000 2017", "highlight": {}, "style": {}, "text": "Otro de los disparates del Sr. Trump\n\"El impuesto de ajuste fronterizo de EE.UU. es una mala idea\" por N. Roubini https://t.co/osyXTmvYhL"}, "type": "Feature"}, {"geometry": {"coordinates": [14.7545, 47.6965], "type": "Point"}, "properties": {"created_at": "Sat Apr 08 17:00:12 +0000 2017", "highlight": {}, "style": {}, "text": "\u248d Syria\n\u248e Zeiten\n\u248f Trump\n\u2490 Ekaterina Degot\n\u2491 Anschlag\n\n2017/4/8 18:54 CEST #trndnl https://t.co/72WnkVYtUD"}, "type": "Feature"}, {"geometry": {"coordinates": [8.4445, 46.813], "type": "Point"}, "properties": {"created_at": "Sat Apr 08 17:00:14 +0000 2017", "highlight": {}, "style": {}, "text": "\u248d Syria\n\u248e Persona 5\n\u248f Assad\n\u2490 Netz\n\u2491 Donald Trump\n\n2017/4/8 18:54 CEST #trndnl https://t.co/WHwtAM2j31"}, "type": "Feature"}, {"geometry": {"coordinates": [114.4017, 3.9451], "type": "Point"}, "properties": {"created_at": "Sat Apr 08 17:00:15 +0000 2017", "highlight": {}, "style": {}, "text": "\u248d #signofthetimes\n\u248e Trump\n\u248f Sehun\n\u2490 Coldplay\n\u2491 Harry Styles\n\n2017/4/9 00:59 MYT #trndnl https://t.co/3ZpGNCIaQz"}, "type": "Feature"}, {"geometry": {"coordinates": [-66.4289, 18.2233], "type": "Point"}, "properties": {"created_at": "Sat Apr 08 17:00:17 +0000 2017", "highlight": {}, "style": {}, "text": "\u2488 Siria\n\u2489 Trump\n\u248a Que Dios\n\u248b Clay\n\u248c #13ReasonsWhy\n\n2017/4/8 12:54 AST #trndnl https://t.co/Q2h6KsMyr0"}, "type": "Feature"}, {"geometry": {"coordinates": [28.99265723, 41.0691275], "type": "Point"}, "properties": {"created_at": "Sat Apr 08 17:03:44 +0000 2017", "highlight": {}, "style": {}, "text": "Shirley (@ Trump K\u00fclt\u00fcr ve G\u00f6steri Merkezi in \u015ei\u015fli, \u0130stanbul) https://t.co/D8u1rX0VpA"}, "type": "Feature"}, {"geometry": {"coordinates": [-94.31526167, 46.49288712], "type": "Point"}, "properties": {"created_at": "Sat Apr 08 17:04:51 +0000 2017", "highlight": {}, "style": {}, "text": "Attending the distilled event at GrandView Lodge with Trump. #adventureswithTrump #trump @ Grand\u2026 https://t.co/aNl7oiLl87"}, "type": "Feature"}, {"geometry": {"coordinates": [28.99265723, 41.0691275], "type": "Point"}, "properties": {"created_at": "Sat Apr 08 17:05:09 +0000 2017", "highlight": {}, "style": {}, "text": "Shirley \u2764\ufe0f\ud83d\udc98 (@ Trump K\u00fclt\u00fcr ve G\u00f6steri Merkezi in \u015ei\u015fli, \u0130stanbul w/ @simtoalev) https://t.co/4y8MYKEgDV"}, "type": "Feature"}, {"geometry": {"coordinates": [-74.0728249, 40.6897945], "type": "Point"}, "properties": {"created_at": "Sat Apr 08 17:07:20 +0000 2017", "highlight": {}, "style": {}, "text": "#thetrumpreport WATCH: Humorist PJ O'Rourke on Donald Trump's impending doom: \u201cYou could be really\u2026\u2026 https://t.co/TL0PW2UTDr"}, "type": "Feature"}, {"geometry": {"coordinates": [-123.1238079, 49.2863487], "type": "Point"}, "properties": {"created_at": "Sat Apr 08 17:08:23 +0000 2017", "highlight": {}, "style": {}, "text": "Want to work at Trump Hotels? We're #hiring in #Vancouver, BC! Click for details: https://t.co/Jbp0n5QzHz #Hospitality #Job #Jobs"}, "type": "Feature"}, {"geometry": {"coordinates": [139.701403, 35.656131], "type": "Point"}, "properties": {"created_at": "Sat Apr 08 17:08:56 +0000 2017", "highlight": {}, "style": {}, "text": "\u30e9\u30fc\u30e1\u30f3\u306e\u5f8c\u3001\u97f3\u697d\u3092\u8074\u3044\u3066\u8e0a\u3063\u3066\u3044\u307e\u3059\u3002 (@ Night Club TRUMP Tokyo) https://t.co/WLJR66utBB https://t.co/2K9l6nWlcN"}, "type": "Feature"}, {"geometry": {"coordinates": [19.4544773, 51.7765107], "type": "Point"}, "properties": {"created_at": "Sat Apr 08 17:10:24 +0000 2017", "highlight": {}, "style": {}, "text": "#liveleak Syrian Americans divided over #Trump after US missile strikes https://t.co/EDaP9SFmK0"}, "type": "Feature"}], "type": "FeatureCollection"}
+                    
+                    ).addTo(marker_cluster_da194e7e50a74d7d8c83e5fc4f272f79);
+                geo_json_b6037d9012754c768b528a2403abe560.setStyle(function(feature) {return feature.properties.style;});
+
+            
+</script>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_3b7294f9a5f34b9c83ea26e3158398a4 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3b7294f9a5f34b9c83ea26e3158398a4" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_3b7294f9a5f34b9c83ea26e3158398a4 = L.map(
+                                  'map_3b7294f9a5f34b9c83ea26e3158398a4',
+                                  {center: [50,5],
+                                  zoom: 5,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_9f5ffac3c15445debac70120f0a378bc = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_3b7294f9a5f34b9c83ea26e3158398a4);
+
+        
+    
+            var marker_cluster_c42b31947c874379a318772c5c453bc6 = L.markerClusterGroup();
+            map_3b7294f9a5f34b9c83ea26e3158398a4.addLayer(marker_cluster_c42b31947c874379a318772c5c453bc6);
+            
+    
+
+            
+
+                var geo_json_c89f715fe15c4fe6b3b3e1f299632026 = L.geoJson(
+                    {"features": [{"geometry": {"coordinates": [-74.0728249, 40.6897945], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 19:35:18 +0000 2017", "highlight": {}, "style": {}, "text": "#thetrumpreport Donald Trump can't give The New York Times any concrete details on his\u2026 https://t.co/Cd7li9yWry\u2026 https://t.co/Y14rvzKJTf"}, "type": "Feature"}, {"geometry": {"coordinates": [-97.31947022, 32.72791305], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 19:35:34 +0000 2017", "highlight": {}, "style": {}, "text": "Fort Worth trends now: F-16, America, Trump, Rick Perry, Rangers. https://t.co/XTUjm0zyWo"}, "type": "Feature"}, {"geometry": {"coordinates": [-80.4326521, 25.8433674], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 19:37:54 +0000 2017", "highlight": {}, "style": {}, "text": "Want to work at Trump Hotels? We're #hiring in #Miami, FL! Click for details: https://t.co/gAO6RXvWda #Hospitality #Job #Jobs"}, "type": "Feature"}, {"geometry": {"coordinates": [-58.5284902, -34.6499645], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 19:38:04 +0000 2017", "highlight": {}, "style": {}, "text": "Lo trataban a trump de loco. Pero apoyan la represion policial en un piquete."}, "type": "Feature"}, {"geometry": {"coordinates": [-83.06532064, 42.35123873], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 19:38:32 +0000 2017", "highlight": {}, "style": {}, "text": "Throwback to the weekend and our trip to Trump's America. #tbt #ickytrump #thirdmanrecords\u2026 https://t.co/vRZW45GS2F"}, "type": "Feature"}, {"geometry": {"coordinates": [-78.8637501, 35.90166411], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 19:41:49 +0000 2017", "highlight": {}, "style": {}, "text": "Don\u2019t trust a guy who does the douchebag point past college. https://t.co/Otlm6rJNQy"}, "type": "Feature"}, {"geometry": {"coordinates": [-87.90968018, 43.04137104], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 19:45:26 +0000 2017", "highlight": {}, "style": {}, "text": "Milwaukee trends now: Milwaukee, Russia, Pepsi, Syria, Trump. https://t.co/2PWRnlp3ai"}, "type": "Feature"}, {"geometry": {"coordinates": [-54.6463026, -20.4536554], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 19:45:39 +0000 2017", "highlight": {}, "style": {}, "text": "Trump diz que \"algo deve acontecer\" com presidente da S\u00edria, Bashar al-Assad https://t.co/Pf0gRKnq1j"}, "type": "Feature"}, {"geometry": {"coordinates": [-113.49975684, 53.53925427], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 19:48:10 +0000 2017", "highlight": {}, "style": {}, "text": "Edmonton trends now: Edmonton, Trump, Brian Jean, Syria, Championship. https://t.co/YrLnFh0DpO"}, "type": "Feature"}, {"geometry": {"coordinates": [-75.163056, 39.960833], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 19:51:55 +0000 2017", "highlight": {}, "style": {}, "text": "Breitbart takes a hit\nAccess now restricts Fake News\nDraining Trump's dank\u2026 https://t.co/pYJEOidO7J"}, "type": "Feature"}, {"geometry": {"coordinates": [-97.684525, 35.563816], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 19:52:23 +0000 2017", "highlight": {}, "style": {}, "text": "LMAOOOOOOOOO Trump never switched up"}, "type": "Feature"}, {"geometry": {"coordinates": [-97.684525, 35.563816], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 19:52:45 +0000 2017", "highlight": {}, "style": {}, "text": "LMAOOOO  https://t.co/qS7zHHckuK"}, "type": "Feature"}, {"geometry": {"coordinates": [-87.62626724, 41.88804564], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 19:54:09 +0000 2017", "highlight": {}, "style": {}, "text": "Chicago trends now: Syria, J.B. Pritzker, Rahm, South Shore, Trump. https://t.co/f0MEi9XCWv"}, "type": "Feature"}, {"geometry": {"coordinates": [0.14099765, 52.20890783], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 19:56:39 +0000 2017", "highlight": {}, "style": {}, "text": "Good. Well done @Twitter @jack https://t.co/OZbMqbW42p"}, "type": "Feature"}, {"geometry": {"coordinates": [-86.9458, 20.5083], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 19:58:21 +0000 2017", "highlight": {}, "style": {}, "text": "i am honestly so confused why trump want to build a wall on the mexico american border. the\u2026 https://t.co/KzKev4y3NW"}, "type": "Feature"}, {"geometry": {"coordinates": [-121.76227, 37.22576], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 20:00:28 +0000 2017", "highlight": {}, "style": {}, "text": "TheBoondocks was one of the best shows, and I WISH WISH WISH they come back and bang on Trump's\u2026 https://t.co/fVxeQj3n7a"}, "type": "Feature"}, {"geometry": {"coordinates": [-74.0728249, 40.6897945], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 20:01:28 +0000 2017", "highlight": {}, "style": {}, "text": "#thetrumpreport Trump, Xi prepare for difficult talks on trade, North Korea - Reuters https://t.co/WFfLIe56cl\u2026 https://t.co/UPS9mC83hF"}, "type": "Feature"}, {"geometry": {"coordinates": [-84.39176393, 33.80966858], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 20:02:10 +0000 2017", "highlight": {}, "style": {}, "text": "#Repost sirpennypacker with @repostapp\n\u30fb\u30fb\u30fb\n#truth #impeach #fakepresident #trump #hope #equality\u2026 https://t.co/E6aOcCQyyi"}, "type": "Feature"}, {"geometry": {"coordinates": [-73.97391563, 40.76246983], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 20:17:22 +0000 2017", "highlight": {}, "style": {}, "text": "YouTube in the Bio \ud83c\udfa5\nLove What You Do. \n#newyork #trumptower  #trump \n#instagood #me #follow\u2026 https://t.co/68I8EpUrEy"}, "type": "Feature"}, {"geometry": {"coordinates": [-71.0552516, 42.3561185], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 20:18:06 +0000 2017", "highlight": {}, "style": {}, "text": "President Trump said he doesn't think Bill O'Reilly did anything wrong https://t.co/f8yzpAp8NE"}, "type": "Feature"}, {"geometry": {"coordinates": [-80.20185547, 25.7231361], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 20:23:05 +0000 2017", "highlight": {}, "style": {}, "text": "#Stigmabase | AM -  Ted Cruz and Marco Rubio urge Trump to sign anti-LGBT order -\u00a0Donald Trump's former primary\u2026 https://t.co/7oh7HcfL0r"}, "type": "Feature"}, {"geometry": {"coordinates": [-80.20185547, 25.7231361], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 20:23:06 +0000 2017", "highlight": {}, "style": {}, "text": "#Stigmabase | AM -  Ted Cruz and Marco Rubio urge Trump to sign anti-LGBT order -\u00a0Donald Trump's former primary\u2026 https://t.co/FOGdxgr042"}, "type": "Feature"}, {"geometry": {"coordinates": [-80.20185547, 25.7231361], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 20:23:06 +0000 2017", "highlight": {}, "style": {}, "text": "#Stigmabase | AM -  Ted Cruz and Marco Rubio urge Trump to sign anti-LGBT order -\u00a0Donald Trump's former primary\u2026 https://t.co/PUsnqDjLZp"}, "type": "Feature"}, {"geometry": {"coordinates": [-46.6271061, -23.4932374], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 20:23:38 +0000 2017", "highlight": {}, "style": {}, "text": "Governo Trump discute op\u00e7\u00f5es militares sobre a S\u00edria, diz fonte https://t.co/63Ex8CcUxi #SDV Via @exame https://t.co/ISWNk2SRCx"}, "type": "Feature"}, {"geometry": {"coordinates": [5.64697266, 3.71489323], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 20:24:00 +0000 2017", "highlight": {}, "style": {}, "text": "#asia #USA #UK #EU  #music #gossip  Politics: TRUMP: 'I think we\u2019ve had one of\u2026 https://t.co/jmICGho1ed #Nigeria\u2026 https://t.co/Q8kcmBxX8d"}, "type": "Feature"}, {"geometry": {"coordinates": [5.64697266, 3.71489323], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 20:24:01 +0000 2017", "highlight": {}, "style": {}, "text": "#asia #USA #UK #EU  #music #gossip  Politics: TRUMP: 'I think we\u2019ve had one of\u2026 https://t.co/jmICGho1ed #Nigeria\u2026 https://t.co/q7sN7cAhBt"}, "type": "Feature"}, {"geometry": {"coordinates": [-117.1963665, 34.0571659], "type": "Point"}, "properties": {"created_at": "Thu Apr 06 20:26:24 +0000 2017", "highlight": {}, "style": {}, "text": "@NikoTheCousin @BoingBoing why is it disgusting? Regardless, Trump couldn't sue over something like this. Most demo\u2026 https://t.co/Cr666deBBb"}, "type": "Feature"}], "type": "FeatureCollection"}
+                    
+                    ).addTo(marker_cluster_c42b31947c874379a318772c5c453bc6);
+                geo_json_c89f715fe15c4fe6b3b3e1f299632026.setStyle(function(feature) {return feature.properties.style;});
+
+            
+</script>
